@@ -13,11 +13,11 @@ filepath = "67试听未成单电话.xlsx"
 df = pd.read_excel(filepath, names=['telephone_num'])
 
 
-db = MySQLdb.connect(host='10.44.62.51',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 a = list()

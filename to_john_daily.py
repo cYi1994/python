@@ -15,11 +15,11 @@ delta_days = datetime.timedelta(days=1)
 yesterday = today - delta_days
 print yesterday
 
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 
@@ -63,11 +63,11 @@ db.close()
 
 # --- 今日试听邀约 ---
 
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 
@@ -134,11 +134,11 @@ db.close()
 
 # --- 今日预计试听 ---
 
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 
@@ -205,11 +205,11 @@ db.close()
 
 # --- 今日试听完成 ---
 
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 
@@ -280,11 +280,11 @@ db.close()
 
 # --- 每日成单数据 ---
 
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 
@@ -351,10 +351,10 @@ db.close()
 # --- 加附件，发邮件 ---
 From = "chuan.yi@lejent.com"  # 登陆邮箱
 To = "john@lejent.com"  # 收件人邮箱
-
+password = ''
 
 server = smtplib.SMTP("smtp.exmail.qq.com")
-server.login(From, "Malilan123")  # 仅smtp服务器需要验证时
+server.login(From, password)  # 仅smtp服务器需要验证时
 
 # 构造MIMEMultipart对象做为根容器
 main_msg = email.MIMEMultipart.MIMEMultipart()

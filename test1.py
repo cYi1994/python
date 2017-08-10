@@ -3,11 +3,11 @@
 
 import MySQLdb
 
-db = MySQLdb.connect(host='10.44.62.51',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 cur = db.cursor()
 
 def get_call_times(input_num):

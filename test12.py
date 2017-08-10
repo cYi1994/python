@@ -22,10 +22,10 @@ datafile_name5 = 'series_order_%s.csv' % yest_in_name
 # --- 加附件，发邮件 ---
 From = "chuan.yi@lejent.com"  # 登陆邮箱
 To = "chuan.yi@lejent.com"  # 收件人邮箱
-
+password = ''
 
 server = smtplib.SMTP("smtp.exmail.qq.com")
-server.login(From, "Malilan123")  # 仅smtp服务器需要验证时
+server.login(From, "password")  # 仅smtp服务器需要验证时
 
 # 构造MIMEMultipart对象做为根容器
 main_msg = email.MIMEMultipart.MIMEMultipart()

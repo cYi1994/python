@@ -21,11 +21,11 @@ print source
 
 # --- app-sqtx0yst ---
 # --- 今日新增用户数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(distinct c2.telephone_number) as "今日新增用户数"\
@@ -50,11 +50,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 今日新增呼出数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(DISTINCT c1.customer_number) as "今日呼出用户数"\
@@ -83,11 +83,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 平均跟进时效 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT sec_to_time(avg(`跟进时间`)) as "平均跟进时效"\
@@ -129,11 +129,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 客户未接通数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(c1.customer_number) as "客户未接通数"\
@@ -163,11 +163,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 无效数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(c1.customer_number) as "无效数"\
@@ -197,11 +197,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 座席未接通数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(c1.customer_number) as "座席未接通数"\
@@ -231,11 +231,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 接通数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(c1.customer_number) as "接通数"\
@@ -265,11 +265,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 当日试听邀约数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT COUNT(DISTINCT student_user_id) AS "当日试听邀约数"\
@@ -327,11 +327,11 @@ source = '%fdbanner%'
 print source
 # --- fdbanner ---
 # --- 今日新增用户数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(distinct c2.telephone_number) as "今日新增用户数"\
@@ -355,11 +355,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 今日新增呼出数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(DISTINCT c1.customer_number) as "今日呼出用户数"\
@@ -388,11 +388,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 平均跟进时效 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT sec_to_time(avg(`跟进时间`)) as "平均跟进时效"\
@@ -434,11 +434,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 客户未接通数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(c1.customer_number) as "客户未接通数"\
@@ -468,11 +468,11 @@ for j in range(len(result)):
 cur.close()
 db.close()
 # --- 无效数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(c1.customer_number) as "无效数"\

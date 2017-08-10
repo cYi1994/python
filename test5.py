@@ -6,11 +6,11 @@ import MySQLdb
 import datetime
 
 
-db = MySQLdb.connect(host='10.44.62.51',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 cur = db.cursor()
 
 filepath = ("昌平电销团队人事汇总表.xlsx")

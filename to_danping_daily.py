@@ -26,11 +26,11 @@ a = list()
 
 def danping_daily(source):
 
-    db = MySQLdb.connect(host='101.200.162.245',
-                         port=3308,
-                         user='youzhangwei',
-                         passwd='Aftyouzw4rjm',
-                         db='afanti_online')
+    db = MySQLdb.connect(host='',
+                         port=,
+                         user='',
+                         passwd='',
+                         db='')
 
     cur = db.cursor()
     sql = ('SELECT count(distinct c2.telephone_number) as "今日新增用户数"\
@@ -315,11 +315,11 @@ delta_days = datetime.timedelta(days=1)
 day_before_yesterday = yesterday - delta_days
 print day_before_yesterday
 # --- 今日新增用户数 ---
-db = MySQLdb.connect(host='101.200.162.245',
-                     port=3308,
-                     user='youzhangwei',
-                     passwd='Aftyouzw4rjm',
-                     db='afanti_online')
+db = MySQLdb.connect(host='',
+                     port=,
+                     user='',
+                     passwd='',
+                     db='')
 
 cur = db.cursor()
 sql = ('SELECT count(distinct c2.telephone_number) as "今日新增用户数"\
@@ -576,8 +576,8 @@ with open(datafile_name, 'wb') as f:
 
 
 # --- 加附件，发邮件 ---
-From = "zhijie.liu@lejent.com"  # 登陆邮箱
-password = 'Woshijie123'  #登陆密码
+From = ""  # 登陆邮箱
+password = ''  #登陆密码
 To = "danping.li@lejent.com"  # 收件人邮箱
 
 server = smtplib.SMTP("smtp.exmail.qq.com")

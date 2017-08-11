@@ -25,11 +25,11 @@ a = list()
 
 def danping_weekly(source):
 
-    db = MySQLdb.connect(host='101.200.162.245',
-                         port=3308,
-                         user='youzhangwei',
-                         passwd='Aftyouzw4rjm',
-                         db='afanti_online')
+    db = MySQLdb.connect(host='',
+                         port=,
+                         user='',
+                         passwd='',
+                         db='')
 
     cur = db.cursor()
     sql = ('SELECT count(distinct c2.telephone_number) as "未拨出"\
@@ -414,9 +414,9 @@ with open(datafile_name, 'wb') as f:
 
 
 # --- 加附件，发邮件 ---
-From = "chuan.yi@lejent.com"  # 登陆邮箱
-password = 'Malilan123'  #登陆密码
-To = "chuan.yi@lejent.com"  # 收件人邮箱
+From = ""  # 登陆邮箱
+password = ''  #登陆密码
+To = ""  # 收件人邮箱
 
 server = smtplib.SMTP("smtp.exmail.qq.com")
 server.login(From, password)  # 仅smtp服务器需要验证时
